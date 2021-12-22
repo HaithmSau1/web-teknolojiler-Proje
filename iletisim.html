@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Benim CSS -->
+    <link rel="stylesheet" href="CSS/main.css" type="text/css">
+
+    <title>İletişim</title>
+
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand navbar-dark bg-dark">
+        <span class="navbar-brand">Haithm</span>
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Anasayfa</a>
+            <a class="nav-link" href="jeddah/genel.html">Şehrim</a>
+            <a class="nav-link active" href="#">İletişim</a>
+            <a class="nav-link " href="CV.html">CV</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h1>İletişim</h1>
+        
+        <br>
+        <div class="row d-flex flex-row-reverse">
+            <div class="col-lg-7 embed-responsive embed-responsive-16by9">
+                <iframe id="iletisim-map" class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1548048.56505384!2d29.352158121987888!3d40.72831015967273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb5169652181b%3A0xeba807a5c78d9201!2sSakarya!5e0!3m2!1sen!2str!4v1640193578025!5m2!1sen!2str"  frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe>            </div>
+            <br>
+            <br>
+            <div class="col-lg-5">
+                <h3>Bize Yazınız:</h3>
+                <br>
+                <form>
+                    <table id="iletisim_form">
+                        <tr>
+                            <td><label for="adi">Adınız:</label></td>
+                            <td><input class="form-control" type="text" name="adi" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="soyad">Soyadınız:</label></td>
+                            <td><input class="form-control" type="text" name="soyadi" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">E-Posta:</label></td>
+                            <td><input class="form-control" type="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="konu">Konu:</label></td>
+                            <td><input class="form-control" type="text" name="konu"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mesaj">Mesajınız:</label></td>
+                            <td><textarea class="form-control textarea" name="mesaj" rows="4" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mesaj turu">Mesaj Türü:</label></td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="mesaj turu" value="Genel" required>
+                                    Genel
+                                </label>
+                                <label>
+                                    <input type="radio" name="mesaj turu" value="Sikayet" required>
+                                    Şikayet
+                                </label>
+                                <label>
+                                    <input type="radio" name="mesaj turu" value="Oneri" required>
+                                    Öneri
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input class="btn btn-success" type="submit" value="Gönder">
+                    <input class="btn btn-danger" type="reset" value="Sıfırla">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
